@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>YogaMix</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="header__brand" aria-label="YogaMix">
+          <img
+            src="./assets/images/brand/logo-light.svg"
+            alt="ЙогаМикс"
+            class="header__logo"
+            width="270"
+            height="64"
+          />
+        </a>
+
+        <button
+          type="button"
+          class="header__menu-toggle"
+          aria-label="Открыть меню"
+          aria-controls="header-navigation"
+          aria-expanded="false"
+        >
+          <img
+            src="./assets/images/icons/burger_icon.svg"
+            alt=""
+            class="header__menu-icon"
+            width="17"
+            height="15"
+          />
+        </button>
+
+        <nav
+          class="header__nav"
+          id="header-navigation"
+          aria-label="Основная навигация"
+        >
+          <button
+            type="button"
+            class="header__menu-close"
+            aria-label="Закрыть меню"
+          >
+            <img
+              src="./assets/images/icons/burger_closed.svg"
+              alt=""
+              class="header__close-icon"
+              width="17"
+              height="17"
+            />
+          </button>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Обо мне</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Обо мне</span
+                >
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Направления</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Направления занятий</span
+                >
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Сертификаты</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Сертификаты и обучение</span
+                >
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Фото</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Фото с занятий</span
+                >
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Отзывы</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Отзывы</span
+                >
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop"
+                  >Контакты</span
+                >
+                <span class="header__link-label header__link-label--mobile"
+                  >Контакты</span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__overlay" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <img
+            src="./assets/images/brand/logo.svg"
+            alt="ЙогаМикс"
+            class="hero__logo"
+          />
+          <h1 class="hero__title">гармония тела и души</h1>
+          <h2 class="hero__subtitle hero__subtitle--first">
+            мягкие практики, дыхание и восстановление
+          </h2>
+          <h2 class="hero__subtitle hero__subtitle--second">
+            онлайн и офлайн занятия
+          </h2>
+          <button
+            type="button"
+            class="btn btn--primary btn--large hero__button"
+          >
+            Записаться на занятие
+          </button>
+        </div>
+        <div class="hero__media">
+          <img
+            src="./assets/images/hero/hero_pc.svg"
+            alt="ЙогаМикс Покровская"
+            class="hero__image"
+            width="438"
+            height="568"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me__inner">
+          <h2 class="about-me__title">Обо мне</h2>
+          <div class="about-me__intro">
+            <div class="about-me__intro-media">
+              <img
+                src="./assets/images/about/about_me_media.png"
+                alt="Татьяна Покровская"
+                class="about-me__intro-image"
+              />
+            </div>
+
+            <div class="about-me__intro-content">
+              <p class="about-me__intro-title">
+                Всех приветствую! Давайте знакомиться!
+              </p>
+              <p class="about-me__intro-name">
+                Меня зовут Татьяна Покровская (Колбенева)
+              </p>
+              <p class="about-me__intro-text--first">
+                Я преподаю оздоровительную йогу, йогу для беременных, йогу для
+                детей и йогатерапию. В своей работе использую комбинированный
+                подход, объединяя практики хатха-йоги и йогатерапии.
+              </p>
+              <p class="about-me__intro-text">
+                Моя задача — подобрать оптимальную, безопасную и эффективную
+                практику под возраст, состояние и запрос человека. Я работаю как
+                со взрослыми, так и с детьми, а также обучаю будущих
+                инструкторов.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-me__advantages">
+            <div class="about-me__advantages-content">
+              <div class="about-me__advantages-list">
+                <div class="about-me__advantages-item">
+                  <img
+                    src="./assets/images/about/number_1.svg"
+                    alt="1"
+                    class="about-me__advantages-icon"
+                    width="56"
+                    height="56"
+                  />
+                  <p class="about-me__advantages-text">
+                    Сертифицированный преподаватель йоги со спортивным
+                    образованием
+                  </p>
+                </div>
+                <div class="about-me__advantages-item">
+                  <img
+                    src="./assets/images/about/number_2.svg"
+                    alt="2"
+                    class="about-me__advantages-icon"
+                    width="56"
+                    height="56"
+                  />
+                  <p class="about-me__advantages-text">
+                    1000+ учеников по всему миру
+                  </p>
+                </div>
+                <div class="about-me__advantages-item">
+                  <img
+                    src="./assets/images/about/number_3.svg"
+                    alt="3"
+                    class="about-me__advantages-icon"
+                    width="56"
+                    height="56"
+                  />
+                  <p class="about-me__advantages-text">
+                    Стаж занятий йогой более 20 лет
+                  </p>
+                </div>
+                <div class="about-me__advantages-item">
+                  <img
+                    src="./assets/images/about/number_4.svg"
+                    alt="4"
+                    class="about-me__advantages-icon"
+                    width="56"
+                    height="56"
+                  />
+                  <p class="about-me__advantages-text">
+                    Стаж преподавательской деятельности более 15 лет
+                  </p>
+                </div>
+                <div class="about-me__advantages-item">
+                  <img
+                    src="./assets/images/about/number_5.svg"
+                    alt="5"
+                    class="about-me__advantages-icon"
+                    width="56"
+                    height="56"
+                  />
+                  <p class="about-me__advantages-text">
+                    Ведущий преподаватель в Московском Институте Йоги с 2018
+                    года
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-me__advantages-media">
+              <img
+                src="./assets/images/about/advantages_pc.png"
+                alt="Татьяна Покровская"
+                class="about-me__advantages-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="directions">
+        <div class="directions__inner">
+          <h2 class="directions__title">Направления занятий</h2>
+
+          <div class="directions__cards">
+            <div class="directions__media directions__media--top">
+              <img
+                src="./assets/images/directions/direction_1.png"
+                alt="Оздоровительная йога"
+                class="directions__image"
+                width="511"
+                height="252"
+              />
+            </div>
+
+            <a
+              href="#!"
+              class="directions__card directions__card--health"
+              data-direction="health"
+            >
+              <h2 class="directions__card-title">Оздоровительная йога</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <a href="#!" class="directions__card" data-direction="therapy">
+              <h2 class="directions__card-title">Йогатерапия</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <a href="#!" class="directions__card" data-direction="pregnant">
+              <h2 class="directions__card-title">Йога для беременных</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <a href="#!" class="directions__card" data-direction="kids">
+              <h2 class="directions__card-title">Йога для детей</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <a href="#!" class="directions__card" data-direction="teachers">
+              <h2 class="directions__card-title">Обучение инструкторов</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <a
+              href="#!"
+              class="directions__card directions__card--tour"
+              data-direction="tour"
+            >
+              <h2 class="directions__card-title">Йога-тур</h2>
+              <span class="directions__card-link">подробнее &gt;</span>
+            </a>
+
+            <div class="directions__media directions__media--bottom">
+              <img
+                src="./assets/images/directions/direction_2.png"
+                alt="Йога-тур"
+                class="directions__image"
+                width="511"
+                height="252"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="certificates">
+        <div class="certificates__inner">
+          <h1 class="certificates__title">Сертификаты и обучение</h1>
+          <h2 class="certificates__subtitle">
+            Постоянно совершенствую знания, чтобы дать вам безопасную и
+            эффективную практику
+          </h2>
+          <!-- Тут слайдер с дипломами -->
+          <h3 class="certificates__third_title">
+            Что вы получаете на занятиях:
+          </h3>
+          <div class="certificates__what_you_get">
+            <div class="certificates__what_you_get-item">
+              <img
+                src="./assets/images/certificates/icons/круг 1.png"
+                alt="1"
+                class="certificates__what_you_get-icon"
+              />
+              <p class="certificates__what_you_get-text">
+                бережную практику без перегрузки
+              </p>
+            </div>
+            <div class="certificates__what_you_get-item">
+              <img
+                src="./assets/images/certificates/icons/круг 2.png"
+                alt="2"
+                class="certificates__what_you_get-icon"
+              />
+              <p class="certificates__what_you_get-text">
+                внимание к вашему состоянию
+              </p>
+            </div>
+            <div class="certificates__what_you_get-item">
+              <img
+                src="./assets/images/certificates/icons/круг 3.png"
+                alt="3"
+                class="certificates__what_you_get-icon"
+              />
+              <p class="certificates__what_you_get-text">
+                понятные объяснения и поддержку
+              </p>
+            </div>
+            <div class="certificates__what_you_get-item">
+              <img
+                src="./assets/images/certificates/icons/круг 4.png"
+                alt="4"
+                class="certificates__what_you_get-icon"
+              />
+              <p class="certificates__what_you_get-text">
+                постепенный, устойчивый результат
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="direction-modal" data-direction-modal aria-hidden="true">
+      <div class="direction-modal__overlay" data-direction-modal-close></div>
+      <article
+        class="direction-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="direction-modal-title"
+      >
+        <img
+          src="./assets/images/modal/top_line.svg"
+          alt=""
+          class="direction-modal__decor direction-modal__decor--top"
+          width="1050"
+          height="77"
+        />
+        <img
+          src="./assets/images/modal/under_line.svg"
+          alt=""
+          class="direction-modal__decor direction-modal__decor--bottom"
+          width="452"
+          height="65"
+        />
+
+        <button
+          type="button"
+          class="direction-modal__close"
+          data-direction-modal-close
+          aria-label="Закрыть модальное окно"
+        >
+          <img
+            src="./assets/images/icons/cross.svg"
+            alt=""
+            class="direction-modal__close-icon"
+            width="75"
+            height="75"
+          />
+        </button>
+
+        <h1 class="direction-modal__title" id="direction-modal-title"></h1>
+        <img
+          src="./assets/images/modal/line_for_text.svg"
+          alt=""
+          class="direction-modal__title-line"
+          width="520"
+          height="13"
+        />
+        <div
+          class="direction-modal__content"
+          data-direction-modal-content
+        ></div>
+        <button
+          type="button"
+          class="btn btn--primary btn--medium direction-modal__button"
+        >
+          Записаться
+        </button>
+      </article>
+    </div>
+
+    <footer></footer>
+
+    <script src="./assets/js/header-menu.js"></script>
+    <script src="./assets/js/directions-modal.js"></script>
+  </body>
+</html>

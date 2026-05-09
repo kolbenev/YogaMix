@@ -1,0 +1,195 @@
+.about-me {
+  background-color: var(--color-bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.about-me__inner {
+  width: min(100% - (var(--container-padding) * 2), var(--container-width));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me__title {
+  margin-bottom: 45px;
+  color: var(--color-bg-primary);
+  font-size: var(--font-h1);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about-me__intro {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 447px minmax(0, 1fr);
+  column-gap: 41px;
+  align-items: center;
+}
+
+.about-me__intro-image {
+  width: 100%;
+}
+
+.about-me__intro-content {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__intro-content,
+.about-me__advantages-text {
+  font-family: "El Messiri", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about-me__intro-title {
+  margin-top: 17px;
+  margin-bottom: 45px;
+  font-size: var(--font-h2);
+}
+
+.about-me__intro-name {
+  margin-bottom: 99px;
+  font-size: var(--font-h3);
+  font-weight: 400;
+}
+
+.about-me__intro-text,
+.about-me__intro-text--first,
+.about-me__advantages-text {
+  font-size: var(--font-p);
+}
+
+.about-me__intro-text--first {
+  margin-bottom: 30px;
+}
+
+.about-me__advantages {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me__advantages-item {
+  display: flex;
+  align-items: center;
+}
+
+.about-me__advantages-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.about-me__advantages-list {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .about-me {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about-me__inner {
+    width: min(100% - 40px, 335px);
+    align-items: stretch;
+  }
+
+  .about-me__title {
+    margin-bottom: 12px;
+    align-self: center;
+    font-size: var(--font-h1-base);
+    line-height: 1.1;
+  }
+
+  .about-me__intro {
+    grid-template-columns: 174px minmax(0, 1fr);
+    column-gap: 14px;
+    row-gap: 18px;
+    align-items: start;
+  }
+
+  .about-me__intro-media {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  .about-me__intro-image {
+    border-radius: 16px;
+  }
+
+  .about-me__intro-content {
+    display: contents;
+  }
+
+  .about-me__intro-title {
+    grid-column: 2;
+    margin: 0;
+    font-size: var(--font-h2-base);
+    line-height: 1.5;
+  }
+
+  .about-me__intro-name {
+    grid-column: 2;
+    margin: 0;
+    font-size: var(--font-h3-base);
+    line-height: 1.7;
+  }
+
+  .about-me__intro-text,
+  .about-me__intro-text--first {
+    grid-column: 1 / -1;
+    font-size: var(--font-p-base);
+    line-height: 1.85;
+  }
+
+  .about-me__intro-text--first {
+    margin: 4px 0 0;
+  }
+
+  .about-me__intro-text {
+    margin: 0;
+  }
+
+  .about-me__advantages {
+    margin-top: 34px;
+    display: block;
+  }
+
+  .about-me__advantages-media {
+    display: none;
+  }
+
+  .about-me__advantages-list {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .about-me__advantages-item {
+    align-items: center;
+  }
+
+  .about-me__advantages-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 18px;
+  }
+
+  .about-me__advantages-text {
+    font-size: var(--font-p-base);
+    line-height: 1.6;
+  }
+}
