@@ -2,6 +2,8 @@
 @import "./base/variables.css";
 @import "./base/reset.css";
 @import "./buttons.css";
+@import "./base/swiper-bundle.min.css";
+@import "./base/fancybox.css";
 
 @import "./hero.css";
 @import "./header.css";
@@ -9,3 +11,6 @@
 @import "./directions.css";
 @import "./modal.css";
 @import "./certificates.css";
+@import "./gallery.css";
+@import "./reviews.css";
+@import "./footer.css";

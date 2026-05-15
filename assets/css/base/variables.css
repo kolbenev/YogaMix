@@ -42,6 +42,7 @@
   --button-line-height: 1;
   --button-letter-spacing: 0;
 
+  --button-bg-yellow: #eacb91;
   --button-primary-bg: var(--color-bg-primary);
   --button-primary-text: #fffae8;
   --button-primary-hover-bg: #364d2d;

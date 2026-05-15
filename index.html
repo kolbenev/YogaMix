@@ -1,135 +1,79 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>YogaMix</title>
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>YogaMix</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="header">
       <div class="header__inner">
         <a href="/" class="header__brand" aria-label="YogaMix">
-          <img
-            src="./assets/images/brand/logo-light.svg"
-            alt="ЙогаМикс"
-            class="header__logo"
-            width="270"
-            height="64"
-          />
+          <img src="./assets/images/brand/logo-light.svg" alt="ЙогаМикс" class="header__logo" width="270" height="64">
         </a>
 
-        <button
-          type="button"
-          class="header__menu-toggle"
-          aria-label="Открыть меню"
-          aria-controls="header-navigation"
-          aria-expanded="false"
-        >
-          <img
-            src="./assets/images/icons/burger_icon.svg"
-            alt=""
-            class="header__menu-icon"
-            width="17"
-            height="15"
-          />
+        <button type="button" class="header__menu-toggle" aria-label="Открыть меню" aria-controls="header-navigation"
+          aria-expanded="false">
+          <img src="./assets/images/icons/burger_icon.svg" alt="" class="header__menu-icon" width="17" height="15">
         </button>
 
-        <nav
-          class="header__nav"
-          id="header-navigation"
-          aria-label="Основная навигация"
-        >
-          <button
-            type="button"
-            class="header__menu-close"
-            aria-label="Закрыть меню"
-          >
-            <img
-              src="./assets/images/icons/burger_closed.svg"
-              alt=""
-              class="header__close-icon"
-              width="17"
-              height="17"
-            />
+        <nav class="header__nav" id="header-navigation" aria-label="Основная навигация">
+          <button type="button" class="header__menu-close" aria-label="Закрыть меню">
+            <img src="./assets/images/icons/burger_closed.svg" alt="" class="header__close-icon" width="17"
+              height="17">
           </button>
 
           <ul class="header__list">
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Обо мне</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Обо мне</span
-                >
+              <a href="#about-me" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Обо мне</span>
+                <span class="header__link-label header__link-label--mobile">Обо мне</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Направления</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Направления занятий</span
-                >
+              <a href="#directions" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Направления</span>
+                <span class="header__link-label header__link-label--mobile">Направления занятий</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Сертификаты</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Сертификаты и обучение</span
-                >
+              <a href="#certificates" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Сертификаты</span>
+                <span class="header__link-label header__link-label--mobile">Сертификаты и обучение</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Фото</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Фото с занятий</span
-                >
+              <a href="#gallery" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Фото</span>
+                <span class="header__link-label header__link-label--mobile">Фото с занятий</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Отзывы</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Отзывы</span
-                >
+              <a href="#reviews" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Отзывы</span>
+                <span class="header__link-label header__link-label--mobile">Отзывы</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link" data-menu-link>
-                <span class="header__link-label header__link-label--desktop"
-                  >Контакты</span
-                >
-                <span class="header__link-label header__link-label--mobile"
-                  >Контакты</span
-                >
+              <a href="#footer" class="header__link" data-menu-link>
+                <span class="header__link-label header__link-label--desktop">Контакты</span>
+                <span class="header__link-label header__link-label--mobile">Контакты</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-
       <div class="header__overlay" aria-hidden="true"></div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__content">
-          <img
-            src="./assets/images/brand/logo.svg"
-            alt="ЙогаМикс"
-            class="hero__logo"
-          />
+          <img src="./assets/images/brand/logo.svg" alt="ЙогаМикс" class="hero__logo">
           <h1 class="hero__title">гармония тела и души</h1>
           <h2 class="hero__subtitle hero__subtitle--first">
             мягкие практики, дыхание и восстановление
@@ -137,34 +81,22 @@
           <h2 class="hero__subtitle hero__subtitle--second">
             онлайн и офлайн занятия
           </h2>
-          <button
-            type="button"
-            class="btn btn--primary btn--large hero__button"
-          >
+          <a target="_blank" href="https://t.me/taniaGnP" class="btn btn--primary btn--large hero__button">
             Записаться на занятие
-          </button>
+          </a>
         </div>
         <div class="hero__media">
-          <img
-            src="./assets/images/hero/hero_pc.svg"
-            alt="ЙогаМикс Покровская"
-            class="hero__image"
-            width="438"
-            height="568"
-            fetchpriority="high"
-          />
+          <img src="./assets/images/hero/hero_pc.svg" alt="ЙогаМикс Покровская" class="hero__image" width="438"
+            height="568" fetchpriority="high">
         </div>
       </section>
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div class="about-me__inner">
           <h2 class="about-me__title">Обо мне</h2>
           <div class="about-me__intro">
             <div class="about-me__intro-media">
-              <img
-                src="./assets/images/about/about_me_media.png"
-                alt="Татьяна Покровская"
-                class="about-me__intro-image"
-              />
+              <img loading="lazy" src="./assets/images/about/about_me_media.png" alt="Татьяна Покровская"
+                class="about-me__intro-image">
             </div>
 
             <div class="about-me__intro-content">
@@ -192,62 +124,37 @@
             <div class="about-me__advantages-content">
               <div class="about-me__advantages-list">
                 <div class="about-me__advantages-item">
-                  <img
-                    src="./assets/images/about/number_1.svg"
-                    alt="1"
-                    class="about-me__advantages-icon"
-                    width="56"
-                    height="56"
-                  />
+                  <img loading="lazy" src="./assets/images/about/number_1.svg" alt="1" class="about-me__advantages-icon" width="56"
+                    height="56">
                   <p class="about-me__advantages-text">
                     Сертифицированный преподаватель йоги со спортивным
                     образованием
                   </p>
                 </div>
                 <div class="about-me__advantages-item">
-                  <img
-                    src="./assets/images/about/number_2.svg"
-                    alt="2"
-                    class="about-me__advantages-icon"
-                    width="56"
-                    height="56"
-                  />
+                  <img loading="lazy" src="./assets/images/about/number_2.svg" alt="2" class="about-me__advantages-icon" width="56"
+                    height="56">
                   <p class="about-me__advantages-text">
                     1000+ учеников по всему миру
                   </p>
                 </div>
                 <div class="about-me__advantages-item">
-                  <img
-                    src="./assets/images/about/number_3.svg"
-                    alt="3"
-                    class="about-me__advantages-icon"
-                    width="56"
-                    height="56"
-                  />
+                  <img loading="lazy" src="./assets/images/about/number_3.svg" alt="3" class="about-me__advantages-icon" width="56"
+                    height="56">
                   <p class="about-me__advantages-text">
                     Стаж занятий йогой более 20 лет
                   </p>
                 </div>
                 <div class="about-me__advantages-item">
-                  <img
-                    src="./assets/images/about/number_4.svg"
-                    alt="4"
-                    class="about-me__advantages-icon"
-                    width="56"
-                    height="56"
-                  />
+                  <img loading="lazy" src="./assets/images/about/number_4.svg" alt="4" class="about-me__advantages-icon" width="56"
+                    height="56">
                   <p class="about-me__advantages-text">
                     Стаж преподавательской деятельности более 15 лет
                   </p>
                 </div>
                 <div class="about-me__advantages-item">
-                  <img
-                    src="./assets/images/about/number_5.svg"
-                    alt="5"
-                    class="about-me__advantages-icon"
-                    width="56"
-                    height="56"
-                  />
+                  <img loading="lazy" src="./assets/images/about/number_5.svg" alt="5" class="about-me__advantages-icon" width="56"
+                    height="56">
                   <p class="about-me__advantages-text">
                     Ведущий преподаватель в Московском Институте Йоги с 2018
                     года
@@ -257,35 +164,23 @@
             </div>
 
             <div class="about-me__advantages-media">
-              <img
-                src="./assets/images/about/advantages_pc.png"
-                alt="Татьяна Покровская"
-                class="about-me__advantages-image"
-              />
+              <img loading="lazy" src="./assets/images/about/advantages_pc.png" alt="Татьяна Покровская"
+                class="about-me__advantages-image">
             </div>
           </div>
         </div>
       </section>
-      <section class="directions">
+      <section class="directions" id="directions">
         <div class="directions__inner">
           <h2 class="directions__title">Направления занятий</h2>
 
           <div class="directions__cards">
             <div class="directions__media directions__media--top">
-              <img
-                src="./assets/images/directions/direction_1.png"
-                alt="Оздоровительная йога"
-                class="directions__image"
-                width="511"
-                height="252"
-              />
+              <img loading="lazy" src="./assets/images/directions/direction_1.png" alt="Оздоровительная йога" class="directions__image"
+                width="511" height="252">
             </div>
 
-            <a
-              href="#!"
-              class="directions__card directions__card--health"
-              data-direction="health"
-            >
+            <a href="#!" class="directions__card directions__card--health" data-direction="health">
               <h2 class="directions__card-title">Оздоровительная йога</h2>
               <span class="directions__card-link">подробнее &gt;</span>
             </a>
@@ -310,146 +205,410 @@
               <span class="directions__card-link">подробнее &gt;</span>
             </a>
 
-            <a
-              href="#!"
-              class="directions__card directions__card--tour"
-              data-direction="tour"
-            >
+            <a href="#!" class="directions__card directions__card--tour" data-direction="tour">
               <h2 class="directions__card-title">Йога-тур</h2>
               <span class="directions__card-link">подробнее &gt;</span>
             </a>
 
             <div class="directions__media directions__media--bottom">
-              <img
-                src="./assets/images/directions/direction_2.png"
-                alt="Йога-тур"
-                class="directions__image"
-                width="511"
-                height="252"
-              />
+              <img loading="lazy" src="./assets/images/directions/direction_2.png" alt="Йога-тур" class="directions__image" width="511"
+                height="252">
             </div>
           </div>
         </div>
+         <picture>
+          <source srcset="./assets/images/directions/line-mobile-1.png" media="(max-width: 767px)">
+          <img loading="lazy" src="./assets/images/directions/line-1.png" alt="линия" class="directions__line-1">
+        </picture>
+         <picture>
+          <source srcset="./assets/images/directions/line-mobile-2.png" media="(max-width: 767px)">
+          <img loading="lazy" src="./assets/images/directions/line-2.png" alt="линия" class="directions__line-2">
+        </picture>
+         <picture>
+          <source srcset="./assets/images/directions/line-mobile-3.png" media="(max-width: 767px)">
+          <img loading="lazy" src="./assets/images/directions/line-3.png" alt="линия" class="directions__line-3">
+        </picture>
+         <picture>
+          <source srcset="./assets/images/directions/line-mobile-4.png" media="(max-width: 767px)">
+          <img loading="lazy" src="./assets/images/directions/line-4.png" alt="линия" class="directions__line-4">
+        </picture>
+        <picture>
+          <source srcset="./assets/images/directions/decor-mobile.png" media="(max-width: 767px)">
+          <img loading="lazy" src="./assets/images/directions/decor.png" alt="декор" class="directions__decor">
+        </picture>
       </section>
-      <section class="certificates">
+      <section class="certificates" id="certificates">
         <div class="certificates__inner">
-          <h1 class="certificates__title">Сертификаты и обучение</h1>
-          <h2 class="certificates__subtitle">
+          <h2 class="certificates__title">Сертификаты и обучение</h2>
+          <h3 class="certificates__subtitle">
             Постоянно совершенствую знания, чтобы дать вам безопасную и
             эффективную практику
-          </h2>
-          <!-- Тут слайдер с дипломами -->
+          </h3>
+          <div class="certificates__body certificates__body--pc">
+            <div class="certificates__slider swiper">
+              <div class="certificates__wrapper swiper-wrapper">
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом1@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом1.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом2@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом2.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом3@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом3.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом4@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом4.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом5@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом5.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом6@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом6.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом7@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом7.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом8@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом8.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом9@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом9.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide certificates__slide--center swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом10@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом10.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом11@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом11.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом12@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом12.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом13@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом13.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом14@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом14.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом15@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом15.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом16@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом16.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом17@2x.png" data-fancybox="certificates"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом17.png"
+                      alt="диплом"></a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="swiper-button-prev certificates__prev"></button>
+            <button type="button" class="swiper-button-next certificates__next"></button>
+          </div>
+          <div class="certificates__body certificates__body--mobile">
+            <div class="certificates__slider swiper">
+              <div class="certificates__wrapper swiper-wrapper">
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом1@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом1.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом2@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом2.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом3@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом3.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом4@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом4.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом5@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image">
+                    <img loading="lazy" src="./assets/images/certificates/diplomas/диплом5.png" alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом6@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image">
+                    <img loading="lazy" src="./assets/images/certificates/diplomas/диплом6.png" alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом7@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом7.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом8@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом8.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом9@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом9.png"
+                      alt="диплом"></a>
+                  <a href="./assets/images/certificates/diplomas/диплом10@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом10.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом11@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом11.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом12@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом12.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом13@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом13.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом14@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом14.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом15@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом15.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом16@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом16.png"
+                      alt="диплом"></a>
+                </div>
+                <div class="certificates__slide swiper-slide">
+                  <a href="./assets/images/certificates/diplomas/диплом17@2x.png" data-fancybox="certificates-mobile"
+                    class="certificates__image"><img loading="lazy" src="./assets/images/certificates/diplomas/диплом17.png"
+                      alt="диплом"></a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="swiper-button-prev certificates__prev"></button>
+            <button type="button" class="swiper-button-next certificates__next"></button>
+          </div>
           <h3 class="certificates__third_title">
             Что вы получаете на занятиях:
           </h3>
           <div class="certificates__what_you_get">
             <div class="certificates__what_you_get-item">
-              <img
-                src="./assets/images/certificates/icons/круг 1.png"
-                alt="1"
-                class="certificates__what_you_get-icon"
-              />
+              <img loading="lazy" src="./assets/images/certificates/icons/круг1.png" alt="1"
+                class="certificates__what_you_get-icon">
               <p class="certificates__what_you_get-text">
                 бережную практику без перегрузки
               </p>
             </div>
             <div class="certificates__what_you_get-item">
-              <img
-                src="./assets/images/certificates/icons/круг 2.png"
-                alt="2"
-                class="certificates__what_you_get-icon"
-              />
+              <img loading="lazy" src="./assets/images/certificates/icons/круг2.png" alt="2"
+                class="certificates__what_you_get-icon">
               <p class="certificates__what_you_get-text">
                 внимание к вашему состоянию
               </p>
             </div>
             <div class="certificates__what_you_get-item">
-              <img
-                src="./assets/images/certificates/icons/круг 3.png"
-                alt="3"
-                class="certificates__what_you_get-icon"
-              />
+              <img loading="lazy" src="./assets/images/certificates/icons/круг3.png" alt="3"
+                class="certificates__what_you_get-icon">
               <p class="certificates__what_you_get-text">
                 понятные объяснения и поддержку
               </p>
             </div>
             <div class="certificates__what_you_get-item">
-              <img
-                src="./assets/images/certificates/icons/круг 4.png"
-                alt="4"
-                class="certificates__what_you_get-icon"
-              />
+              <img loading="lazy" src="./assets/images/certificates/icons/круг4.png" alt="4"
+                class="certificates__what_you_get-icon">
               <p class="certificates__what_you_get-text">
                 постепенный, устойчивый результат
               </p>
             </div>
           </div>
         </div>
+        <img loading="lazy" src="./assets/images/certificates/line.png" alt="линия" class="certificates__line">
+        <div class="certificates__decor">
+          <picture>
+            <source srcset="./assets/images/certificates/decor-mobile.png" media="(max-width: 767px)">
+
+            <img loading="lazy" src="./assets/images/certificates/decor.png" alt="декор">
+          </picture>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="gallery__inner">
+          <h2 class="gallery__title">Фото с занятий</h2>
+          <div class="gallery__slider gallery__slider--pc swiper">
+            <div class="gallery__wrapper swiper-wrapper">
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/1@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/1.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/2@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/2.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/3@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/3.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/4@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/4.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/5@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/5.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/6@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/6.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/7@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/7.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/8@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/8.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/9@2x.jpg" data-fancybox="gallery" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/9.jpg" alt="йога"></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="gallery__slider gallery__slider--mobile swiper">
+            <div class="gallery__wrapper swiper-wrapper">
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/2@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/2.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide gallery__slide--column swiper-slide">
+                <a href="./assets/images/gallery/1@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/1.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/3@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/3.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/4@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/4.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/5@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/5.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/6@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/6.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/7@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/7.jpg" alt="йога"></a>
+              </div>
+              <div class="gallery__slide swiper-slide">
+                <a href="./assets/images/gallery/8@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/8.jpg" alt="йога"></a>
+                <a href="./assets/images/gallery/9@2x.jpg" data-fancybox="gallery-mobile" class="gallery__image"><img loading="lazy" src="./assets/images/gallery/9.jpg" alt="йога"></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews__inner">
+          <h2 class="reviews__title">Отзывы</h2>
+          <h3 class="reviews__subtitle">Истории учеников, которые уже практикуют и чувствуют результат</h3>
+          <div class="reviews__body">
+            <div class="reviews__slider swiper">
+              <div class="reviews__wrapper swiper-wrapper">
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Татьяна -</h4>
+                  <div class="reviews__text">“Благодарю преподавателя за профессионализм, внимательный подход и любовь к
+                    своему делу. Особенно ценны знания по детской йоге и работе с детьми с особенностями развития.”
+                  </div>
+                </article>
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Елена -</h4>
+                  <div class="reviews__text">“Проходила онлайн-обучение по детской йоге и осталась очень довольна.
+                    Татьяна даёт знания чётко, профессионально и с большой вовлечённостью, поэтому занятия всегда ждала
+                    с радостью.”</div>
+                </article>
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Анастасия -</h4>
+                  <div class="reviews__text">“Благодарю Татьяну за обучение детской йоге для детей с ОВЗ. Курс дал мне
+                    нужную базу для работы, а полученные знания и инструменты я уже применяю на практике.”</div>
+                </article>
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Марина -</h4>
+                  <p class="reviews__text">“Обучение по Кундалини-йоге дало мне много знаний и практического опыта.
+                    Тёплая атмосфера и внимательный подход Татьяны помогли уверенно сделать шаг к реализации себя как
+                    преподавателя.”</p>
+                </article>
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Елена -</h4>
+                  <p class="reviews__text">“Татьяна — чуткий и глубокий преподаватель с большим опытом. Это обучение стало для меня не просто курсом, а важным и ценным этапом на моём пути.”</p>
+                </article>
+                <article class="reviews__slide swiper-slide">
+                  <h4 class="reviews__name">Наталья -</h4>
+                  <p class="reviews__text">“Занимаюсь с Татьяной уже 3 года. Очень нравится её индивидуальный подход, внимательность и профессионализм. Нагрузка всегда подобрана бережно и точно под состояние. С удовольствием продолжаю занятия.”</p>
+                </article>
+              </div>
+            </div>
+            <button type="button" class="swiper-button-prev reviews__prev">
+              <svg width="212" height="24" viewBox="0 0 212 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M210 13.5469C211.105 13.5469 212 12.6514 212 11.5469C212 10.4423 211.105 9.54688 210 9.54688V11.5469V13.5469ZM-1.52588e-05 11.5469L20 23.0939V-0.000130653L-1.52588e-05 11.5469ZM210 11.5469V9.54688L18 9.54687V11.5469V13.5469L210 13.5469V11.5469Z"
+                  fill="#FFFAE8"/>
+              </svg>
+            </button>
+            <button type="button" class="swiper-button-next reviews__next">
+              <svg width="212" height="24" viewBox="0 0 212 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 9.54688C0.89543 9.54688 0 10.4423 0 11.5469C0 12.6514 0.89543 13.5469 2 13.5469V11.5469V9.54688ZM212 11.5469L192 -0.000130653V23.0939L212 11.5469ZM2 11.5469V13.5469H194V11.5469V9.54688H2V11.5469Z"
+                  fill="#FFFAE8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews__block">
+            <p class="reviews__heading">Готовы начать практику в комфортном для себя формате?</p>
+            <p class="reviews__caption">Онлайн и офлайн-занятия</p>
+          </div>
+          <a target="_blank" href="https://t.me/taniaGnP" class="reviews__link">Записаться на занятие</a>
+        </div>
+        <picture>
+          <source srcset="./assets/images/reviews/image-mobile.png" media="(max-width: 767px)">
+
+          <img loading="lazy" src="./assets/images/reviews/image.png" alt="лист" class="reviews__image">
+        </picture>
       </section>
     </main>
 
     <div class="direction-modal" data-direction-modal aria-hidden="true">
       <div class="direction-modal__overlay" data-direction-modal-close></div>
-      <article
-        class="direction-modal__dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="direction-modal-title"
-      >
-        <img
-          src="./assets/images/modal/top_line.svg"
-          alt=""
-          class="direction-modal__decor direction-modal__decor--top"
-          width="1050"
-          height="77"
-        />
-        <img
-          src="./assets/images/modal/under_line.svg"
-          alt=""
-          class="direction-modal__decor direction-modal__decor--bottom"
-          width="452"
-          height="65"
-        />
+      <div class="direction-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="direction-modal-title">
+        <img loading="lazy" src="./assets/images/modal/top_line.svg" alt="" class="direction-modal__decor direction-modal__decor--top"
+          width="1050" height="77">
+        <img loading="lazy" src="./assets/images/modal/under_line.svg" alt=""
+          class="direction-modal__decor direction-modal__decor--bottom" width="452" height="65">
 
-        <button
-          type="button"
-          class="direction-modal__close"
-          data-direction-modal-close
-          aria-label="Закрыть модальное окно"
-        >
-          <img
-            src="./assets/images/icons/cross.svg"
-            alt=""
-            class="direction-modal__close-icon"
-            width="75"
-            height="75"
-          />
+        <button type="button" class="direction-modal__close" data-direction-modal-close
+          aria-label="Закрыть модальное окно">
+          <img loading="lazy" src="./assets/images/icons/cross.svg" alt="" class="direction-modal__close-icon" width="75"
+            height="75">
         </button>
 
-        <h1 class="direction-modal__title" id="direction-modal-title"></h1>
-        <img
-          src="./assets/images/modal/line_for_text.svg"
-          alt=""
-          class="direction-modal__title-line"
-          width="520"
-          height="13"
-        />
-        <div
-          class="direction-modal__content"
-          data-direction-modal-content
-        ></div>
-        <button
-          type="button"
-          class="btn btn--primary btn--medium direction-modal__button"
-        >
+        <div class="direction-modal__title" id="direction-modal-title"></div>
+        <img loading="lazy" src="./assets/images/modal/line_for_text.svg" alt="" class="direction-modal__title-line" width="520"
+          height="13">
+        <div class="direction-modal__content" data-direction-modal-content></div>
+        <a target="_blank" href="https://t.me/taniaGnP" class="btn btn--primary btn--medium direction-modal__button">
           Записаться
-        </button>
-      </article>
+        </a>
+      </div>
     </div>
 
-    <footer></footer>
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <h2 class="footer__title">Контакты</h2>
+        <h3 class="footer__subtitle">Помогу подобрать формат занятий под вас</h3>
+        <ul class="footer__social">
+          <li class="footer__item"><a
+              href="https://max.ru/u/f9LHodD0cOKzKRSA6KYtvES4W0KvCETEUchv9FtF0ogD6vzA3BVhECC83rg" target="_blank"
+              class="footer__link"><img src="./assets/images/icons/max.svg" alt="max"></a></li>
+          <li class="footer__item"><a href="https://t.me/taniaGnP" target="_blank" class="footer__link"><img
+                src="./assets/images/icons/telegram.svg" alt="max"></a></li>
+        </ul>
+        <small class="footer__copy">© YogaMix (2026).</small>
+      </div>
+    </footer>
+  </div>
 
-    <script src="./assets/js/header-menu.js"></script>
-    <script src="./assets/js/directions-modal.js"></script>
-  </body>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/fancybox.umd.js"></script>
+  <script src="./assets/js/header-menu.js"></script>
+  <script src="./assets/js/directions-modal.js"></script>
+  <script src="./assets/js/sliders.js"></script>
+  <script src="./assets/js/gallery.js"></script>
+</body>
+
 </html>

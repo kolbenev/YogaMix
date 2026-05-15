@@ -47,3 +47,12 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "AlbertSans";
+  src: url("../../fonts/AlbertSans/AlbertSans-Italic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
