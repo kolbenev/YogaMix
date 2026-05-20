@@ -1,0 +1,141 @@
+.gallery {
+    background: var(--color-bg-primary);
+    font-family: "El Messiri", sans-serif;
+    padding-top: 45px;
+    padding-bottom: 55px;
+
+}
+
+.gallery__inner {
+    width: min(100% - (var(--container-padding) * 2), var(--container-width));
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.gallery__title {
+    font-weight: 400;
+    font-size: var(--font-h1);
+    line-height: 83%;
+    color: var(--color-bg-primary);
+    margin-bottom: 110px;
+    text-align: center;
+
+}
+
+.gallery__slider--mobile {
+    display: none;
+}
+
+.gallery__slider {
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 50px;
+}
+
+.gallery__wrapper {
+    align-items: center;
+}
+
+.gallery__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.gallery__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+}
+
+.gallery__image img {
+    
+    transition: transform 0.5s;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 25px;
+    bottom: 0 !important;
+
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    margin: 0 !important;
+    background-color: var(--color-bg-light);
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--button-bg-yellow);
+}
+
+@media (max-width: 767px) {
+
+    .gallery__slide {
+        gap: 20px;
+    }
+
+    .gallery__slide--column {
+        flex-direction: column;
+    }
+
+    .gallery__slider--mobile {
+        display: block;
+    }
+
+    .gallery__slider--pc {
+        display: none;
+    }
+
+    .gallery__inner {
+        width: min(100% - 40px, 335px);
+    }
+
+    .gallery {
+        padding-top: 22px;
+        padding-bottom: 24px;
+    }
+
+    .gallery__title {
+        font-size: var(--font-h1-base);
+        margin-bottom: 90px;
+        line-height: 118%;
+    }
+
+    .gallery__slider {
+        padding-bottom: 20px;
+    }
+
+    .swiper-pagination {
+        gap: 5px;
+    }
+
+
+    .swiper-pagination-bullet {
+        width: 9px;
+        height: 9px;
+        flex: 0 0 9px;
+    }
+}
+
+@media (any-hover: hover) {
+    .swiper-pagination-bullet:hover {
+        background-color: var(--button-bg-yellow);
+    }
+
+    .gallery__image:hover img {
+        transform: scale(1.05);
+    }
+}

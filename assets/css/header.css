@@ -1,0 +1,263 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 105px;
+  background-image: url("../images/header/background_header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #d9d9d933;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.header__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+  min-height: 105px;
+  margin-inline: auto;
+  padding-block: 20px;
+}
+
+.header__brand {
+  flex-shrink: 0;
+}
+
+.header__logo {
+  display: block;
+  width: 270px;
+  height: auto;
+}
+
+.header__menu-toggle,
+.header__menu-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__menu-icon,
+.header__close-icon {
+  display: block;
+}
+
+.header__nav {
+  margin-left: 52px;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__item {
+  display: flex;
+}
+
+.header__link {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fdf6e9;
+  font-family: "El Messiri", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  transition:
+    color var(--transition),
+    opacity var(--transition);
+}
+
+.header__link-label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.header__link::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid currentColor;
+}
+
+.header__link:hover {
+  opacity: 0.8;
+}
+
+.header__link-label--mobile,
+.header__overlay {
+  display: none;
+}
+
+body.body--menu-open {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px){
+  .header__logo {
+    width: 150px;
+  }
+
+  .header__nav {
+    margin-left: 40px;
+  }
+  .header__list {
+    gap: 10px 20px;
+  }
+  .header__link {
+    font-size: 23px;
+  }
+    
+}
+
+@media (max-width: 767px) {
+  .header {
+    min-height: 31px;
+  }
+
+  .header__inner {
+    min-height: 31px;
+    justify-content: space-between;
+    padding-block: 0;
+  }
+
+  .header__logo {
+    width: 100px;
+  }
+
+  .header__menu-toggle {
+    position: relative;
+    z-index: 31;
+    display: inline-flex;
+    width: 17px;
+    height: 14px;
+  }
+
+  .header__menu-icon {
+    width: 17px;
+    height: 14px;
+  }
+
+  .header__nav {
+    position: fixed;
+    inset: 0 0 0 auto;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 248px;
+    height: 100%;
+    margin-left: 0;
+    padding: 7px 15px 32px 24px;
+    background-color: transparent;
+    background-image: url("../images/header/bg_mb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: -12px 0 32px rgba(37, 38, 37, 0.18);
+    right: -100%;
+    transition: right var(--transition);
+  }
+
+  .header__nav::before {
+    content: "";
+   position: absolute;
+   inset: 0;
+    background: #d9d9d933;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+  }
+
+  .header__menu-close {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-self: flex-end;
+    width: 17px;
+    height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .header__close-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .header__list {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 12px;
+    overflow: auto;
+  }
+
+  .header__item {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .header__link {
+    align-items: flex-end;
+    min-width: auto;
+    font-family: "El Messiri", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .header__link-label--desktop {
+    display: none;
+  }
+
+  .header__link-label--mobile {
+    display: inline;
+  }
+
+  .header__overlay {
+    position: fixed;
+    inset: 0;
+    z-index:  0;
+    display: block;
+    background: rgba(37, 38, 37, 0.28);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition);
+  }
+
+  .header.header--menu-open .header__nav {
+    right: 0;
+  }
+
+  .header.header--menu-open .header__overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

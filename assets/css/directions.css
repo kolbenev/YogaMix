@@ -1,0 +1,311 @@
+.directions {
+  background-color: var(--color-bg-light);
+  font-family: "El Messiri", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.directions__decor {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%,0%);
+  width: 110%;
+}
+
+.directions__line-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.directions__line-2 {
+  position: absolute;
+  bottom: 0;
+  left: -21px;
+}
+
+.directions__line-3 {
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+}
+
+.directions__line-4 {
+  position: absolute;
+  bottom: 105%;
+  right: 0;
+}
+
+.directions__inner {
+  width: min(100% - (var(--container-padding) * 2), var(--container-width));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.directions__title {
+  margin-bottom: 10px;
+  color: var(--color-bg-primary);
+  font-size: var(--font-h1);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.directions__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 38px;
+  column-gap: 20px;
+}
+
+.directions__card {
+  --directions-card-shift: 0px;
+  width: 100%;
+  max-width: 554px;
+  height: 154px;
+  padding: 26px 24px 20px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text-light-second);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(var(--directions-card-shift));
+  transition:
+    background-color var(--transition),
+    box-shadow var(--transition),
+    color var(--transition),
+    transform var(--transition);
+  cursor: pointer;
+}
+
+.directions__card:hover,
+.directions__card:focus-visible {
+  background-color: #3d5932;
+  color: var(--color-text-accent);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.22);
+  transform: translateY(var(--directions-card-shift)) scale(1.02);
+}
+
+.directions__card:focus-visible {
+  outline: 2px solid var(--color-text-accent);
+  outline-offset: 4px;
+}
+
+.directions__card-title {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.directions__card-link {
+  align-self: flex-end;
+  font-size: 26px;
+  line-height: 1;
+  transition: color var(--transition);
+  color: #eee4c1;
+}
+
+.directions__card:hover .directions__card-link,
+.directions__card:focus-visible .directions__card-link {
+  color: var(--color-text-accent);
+}
+
+.directions__media {
+  max-width: 511px;
+  width: 100%;
+  height: 252px;
+  justify-self: center;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+}
+
+.directions__media--top {
+  justify-self: center;
+}
+
+.directions__media--bottom {
+  justify-self: center;
+}
+
+.directions__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.directions__card--health {
+  --directions-card-shift: 35px;
+}
+
+.directions__card--tour {
+  --directions-card-shift: 49px;
+}
+
+@media (max-width: 767px) {
+  .directions__line-1 {
+    left: 0;
+    bottom: -10px;
+    max-width: none;
+    height: 930px;
+  width: 105%;
+  }
+
+  .directions__line-2 {
+    left: auto;
+    left: 50px;
+   width: 105%;
+    height: 250px;
+  }
+
+  .directions__line-3 {
+    right: -20px;
+    max-width: none;
+    bottom: -110px;
+    width: 195px;
+  }
+
+  .directions__line-4 {
+    bottom: 95%;
+    max-width: none;
+    width: 80px;
+    height: 138px;
+  }
+
+  .directions {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 94px;
+  }
+
+
+  .directions__inner {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 30px, 360px);
+  }
+
+  .directions__title {
+    margin-bottom: 55px;
+    align-self: flex-start;
+    color: var(--color-bg-primary);
+    font-size: var(--font-h1-base);
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .directions__cards {
+    width: 100%;
+    grid-template-columns: repeat(2, 152px);
+    grid-auto-rows: 84px;
+    justify-content: center;
+    align-items: start;
+    gap: 29px 18px;
+  }
+
+  .directions__card {
+    --directions-card-shift: 0px;
+
+    width: 152px;
+    height: 84px;
+    padding: 4px 8px 7px;
+    border-radius: 8px;
+    transform: none;
+  }
+
+  .directions__card:hover,
+  .directions__card:focus-visible {
+    transform: scale(1.02);
+  }
+
+  .directions__card-title {
+    font-size: var(--font-h3-base);
+    line-height: 1.45;
+  }
+
+  .directions__card-link {
+    font-size: var(--font-p-small-base);
+    line-height: 1;
+  }
+
+  .directions__media {
+    width: 165px;
+    height: 116px;
+    border-radius: 8px;
+  }
+
+  .directions__media--top {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    transform: translate(-6px, -13px);
+  }
+
+  .directions__card--health {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .directions__card[data-direction="therapy"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .directions__card[data-direction="pregnant"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .directions__card[data-direction="kids"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .directions__card[data-direction="teachers"] {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .directions__card--tour {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .directions__media--bottom {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: end;
+    transform: translate(6px, -13px);
+  }
+}
+
+@media (max-width: 359px) {
+  .directions__title {
+    font-size: 30px;
+  }
+
+  .directions__cards {
+    grid-template-columns: repeat(2, 140px);
+    gap: 26px 10px;
+  }
+
+  .directions__card {
+    width: 140px;
+  }
+
+  .directions__media {
+    width: 150px;
+  }
+}
