@@ -1,1 +1,0 @@
-Fancybox.bind("[data-fancybox]", {})
